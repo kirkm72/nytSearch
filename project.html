@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<title>NY Times Search</title>
+<header>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+        <link rel= "stylesheet" type="text/css" href="assets/css/style.css">
+
+</header>
+
+
+<body class="container-fluid">
+
+<div class="container jumbotron">
+    <div class="container">
+        <h1 class="text-center">
+            New York Times Search
+        </h1>
+    </div>
+                
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-heading">
+                    <h3>Search Parameters</h3>
+                
+                    <form>
+                        <div>
+                            <label id="search">
+                                search term:
+                                <input type="text" id="search-term">
+                            </label>
+                        </div>
+
+                        <div>
+                                <label>
+                                    Number of records to retrieve:
+                                    <select class="number-select">
+                                            <option value="1">1</option>
+                                            <option value="5" selected="">5</option>
+                                            <option value="10">10</option>
+
+                                        </select> 
+                                </label>
+                            </div>
+
+                            <div>
+                                    <label>
+                                        Start Year (Optional):
+                                        <input type="text" id="start-year">
+                                        
+                                    </label>
+                                </div>
+                            
+                                <div>
+                                        <label>
+                                            End Year (optional):
+                                            <input type="text" id="end-year">
+                                            
+                                        </label>
+                                    </div>
+                            <button type="submit" id="search-button">Search</button>
+                            <button type="button" id="clear-all">Clear Results</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="row">
+            <div class="container col-md-12">
+                <br>
+                <div class="outer">
+                    <div>
+                        <br>
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3>Top Articles</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">     
+        <div class="container col-md-12">
+            <div>
+                <h6>made by: Chris, Sharon, Marcus, and Kirk</h6>
+            </div>
+        </div>
+    </div>  
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/nytRetriever.js"></script>
+
+</body>
+
+</html>
